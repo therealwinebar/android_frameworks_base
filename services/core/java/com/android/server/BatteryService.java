@@ -587,7 +587,6 @@ public final class BatteryService extends SystemService {
         try {
             mBatteryStats.setBatteryState(mHealthInfo.batteryStatus, mHealthInfo.batteryHealth,
                     maybeTranslatePlugType(mPlugType), mHealthInfo.batteryLevel, mHealthInfo.batteryTemperature,
-                    mPlugType, mHealthInfo.batteryLevel, mHealthInfo.batteryTemperature,
                     mHealthInfo.batteryVoltage, mHealthInfo.batteryChargeCounter,
                     mHealthInfo.batteryFullCharge);
         } catch (RemoteException e) {
